@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let num1= parseFloat(prompt('number1'));
+
+        let num2= parseFloat(prompt('number2'));
+
+        let op= prompt('Enter the operator(+,-,*,/)');
+
+        let num
+        switch (op)
+        {
+        case '+':
+            num = num1 + num2
+            break
+        case '-':
+            num = num1 - num2
+            break
+        case '*':
+            num = num1 * num2
+            break
+        case '/':
+            num = num1 / num2
+            break
+        default:
+            num = 'Invalid operator'
+        }
+
+        console.log(isNaN(num) ? 'Invalid input':num)
+
+    </script>
+    
+</body>
+</html>
